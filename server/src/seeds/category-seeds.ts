@@ -8,5 +8,6 @@ export const seedCategory = async () => {
     { name: 'Whiskey' },
     { name: 'Gin' },
     { name: 'Brandy' },
+    { name: 'Other'}
   ], { individualHooks: true });
 };

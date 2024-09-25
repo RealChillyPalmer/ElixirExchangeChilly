@@ -28,13 +28,17 @@
     width: 50%;
 }
 
-.form-field label {
+.form-container .form-field label {
     color: var(--primary);
     font-weight: bold;
     text-shadow: 1px 1px 1px var(--secondary);
-    background-color: rgba(0, 0, 0, 0.333);
+    /* background-color: rgba(0, 0, 0, 0.333); */
     width: 74px;
     padding: 0
+}
+
+.form-container input  {
+    background-color: var(--tertiary);
 }
 
 .form-action {
@@ -76,4 +80,14 @@
 
 .form-toc strong:hover {
     color: var(--secondary);
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary);
+    border-radius: 8px;
+    padding: 1rem;
 }

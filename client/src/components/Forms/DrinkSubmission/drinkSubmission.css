@@ -8,6 +8,10 @@
 .drink-submission .form-field {
     width: 100%;
 }
+.drink-submission .form-field label{
+    width: 100%;
+
+}
 
 .drink-submission .form-field .form-action {
     display: flex;
@@ -18,7 +22,9 @@
 .drink-submission input, select, textarea {
     font-family: Roboto!important;
     font-size: medium;
-    border: 1px solid var(--secondary);
+    border: 2px solid var(--primary);
+    background-color: var(--tertiary);
+    color: black;
 }
 
 .drink-submission .ingredients-section .ingredients-input {
@@ -26,6 +32,12 @@
     align-items: center;
     gap: 1rem;
     flex-grow: 1;
+}
+
+.ingredients-section h3{
+    color: Black;
+    background-color: var(--secondary);
+    width: 100%;
 }
 
 .ingredient-list table {
@@ -45,4 +57,11 @@
 .drink-submission .instructions-form-field {
     display: flex;
     flex-direction: column;
+}
+
+#subDrinkBtn {
+    width: 300px;
+    align-self: center;
+    margin-top: 10px;
+
 }

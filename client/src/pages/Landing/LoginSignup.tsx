@@ -26,12 +26,12 @@ export default function LoginSignUp({ hasAccount, setHasAccount }: { hasAccount:
           </motion.div>
         </AnimatePresence>
       ) : (
-        <motion.div key="login" initial={{ opacity: 1, x: '100%' }} animate={{ opacity: 1, x: 0 }} transition={{ ease: 'easeInOut' }} exit={{ opacity: 1 }}>
-          <Login />
+        <motion.div key="login" initial={{ opacity: 1, x: '100%' }} animate={{ opacity: 1, x: 0 }} transition={{ ease: 'easeInOut' }} exit={{ opacity: 1 }}>          
+          <Login />          
           <motion.p key="do-not-have-an-account" initial={{ opacity: 1, x: '100%' }} animate={{ opacity: 1, x: 0 }} transition={{ ease: 'easeInOut' }} exit={{ opacity: 1 }}>
             Don&apos;t have an account?, please{' '}
             <span>
-              <button onClick={() => setHasAccount(true)}>Sign Up</button>
+              <button id='mainSignUp' onClick={() => setHasAccount(true)}>Sign Up</button>
             </span>
           </motion.p>
         </motion.div>

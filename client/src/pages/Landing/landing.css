@@ -3,14 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    backdrop-filter: blur(2px);
-    height: 700px;
+    height: 490px;
+    backdrop-filter: blur(9px);
+    padding: 0 24px;
 }
 
 .landing p {
     text-align: center;
     font-weight: 300;
-    color: var(--tertiary)
+    color: var(--tertiary);
+    
 }
 
 .landing p button {
@@ -37,6 +39,7 @@
     gap: 1rem;
     height: 800px;
 }
+
 
 .dashboard .panel .actions {
     display: flex;
@@ -67,7 +70,7 @@
 }
 
 .dashboard .panel .operations {
-    border: 2px solid var(--secondary);
+    border: 2px solid var(--primary);
     border-radius: 4px;
     width: 75%;
     list-style-type: disc;
@@ -75,5 +78,14 @@
 
 .dashboard .panel .operations .operations-wrapper {
     max-height: 740px;
+    overflow-y: scroll;
+    scrollbar-color: var(--secondary) var(--tertiary);
+    scrollbar-width: thin;
 }
+
+#mainSignUp {
+    background-color: var(--primary);
+}
+
+
 

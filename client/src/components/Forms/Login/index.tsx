@@ -34,7 +34,7 @@ const Login = () => {
 
   return (
     <div className="form-container">
-      <form ref={formRef} className="form" onSubmit={handleSubmit}>
+      <form ref={formRef} className="form" id="loginForm" onSubmit={handleSubmit}>
         <h1>Login</h1>
         {error !== '' && <h4 className="form-error-message">{error}</h4>}
         <motion.div className="form-field" initial={{ opacity: 0, x: '100%' }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} exit={{ opacity: 0 }}>
@@ -50,6 +50,7 @@ const Login = () => {
         </motion.div>
       </form>
     </div>
+    
   );
 };
 

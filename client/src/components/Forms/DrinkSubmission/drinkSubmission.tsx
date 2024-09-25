@@ -1,5 +1,5 @@
 import { useCallback, useContext, useEffect, useRef, useState } from 'react';
-import { CiCircleCheck } from 'react-icons/ci';
+import { CiCirclePlus } from 'react-icons/ci';
 import { getAllCategories } from '../../../api/categoryAPI';
 import { createDrink } from '../../../api/drinkAPI';
 import { MyDrinksContext } from '../../../App';
@@ -134,7 +134,7 @@ function DrinkSubmission() {
                 <th>
                   <div className="form-field-action">
                     <div className="form-action" onClick={handleAddIngredient}>
-                      <CiCircleCheck style={{ fontSize: '2rem', cursor: 'pointer', color: 'green', marginTop: '1.5rem' }} />
+                      <CiCirclePlus style={{ fontSize: '2rem', cursor: 'pointer', color: 'var(--primary)', marginTop: '1.5rem' }} />
                     </div>
                   </div>
                 </th>
@@ -158,7 +158,7 @@ function DrinkSubmission() {
         <textarea ref={instructionsRef} id="instructions" name="instructions" rows={8} />
       </div>
 
-      <button onClick={(e) => handleCreateDrink(e)}>Submit Drink</button>
+      <button id="subDrinkBtn" onClick={(e) => handleCreateDrink(e)}>Submit Drink</button>
     </form>
   );
 }

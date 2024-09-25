@@ -1,7 +1,6 @@
 .drink-inspiration-background {
     background-position: center;
     background-size: cover;
-    overflow: hidden;
 }
 
 .drink-inspiration {
@@ -12,6 +11,7 @@
     min-height: 100vh;
     padding: 1rem 1rem;
     width: 100%;
+    
 }
 
 .drink-inspiration h2 {

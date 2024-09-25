@@ -51,15 +51,14 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   text-transform: uppercase;
   font-size: small;
-
   transition: all 0.25s ease-in-out;
 }
 
 button:hover {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   color: white;
 }
 
@@ -77,7 +76,7 @@ footer {
   align-items: center;
   color: black;
   background-color: var(--primary);
-  width: 1400px;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -88,7 +87,7 @@ footer {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-image: url('../../client/public/HomeBackground.png');
+  background-image: url('/HomeBackground.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -98,7 +97,7 @@ footer {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-image: url('../../client/public/HomeBackground.png');
+  background-image: url('/HomeBackground.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
